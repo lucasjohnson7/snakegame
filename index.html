@@ -1,0 +1,40 @@
+<!-- SnakeGame by @Lucas Johnson -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake Game</h1>
+        <div class="scoreboard">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="highscore">0</span></p>
+        </div>
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOver" class="game-over" style="display: none;">
+                <h2>Game Over!</h2>
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Restart Game</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="pauseBtn">Pause</button>
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Use the arrow keys to move the snake.</p>
+            <p>Eat hot dogs, pizza slices, and burgers to grow longer!</p>
+            <p>Avoid hitting the walls and yourself!</p>
+        </div>
+    </div>
+    
+    <script src="snake.js"></script>
+</body>
+</html>

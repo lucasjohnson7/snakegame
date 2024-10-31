@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* 80s coding style font */
+}
+
+body {
+    background-color: #ADD8E6; /* Light blue background */
+    color: #FFFFFF; /* White text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    position: relative; /* Ensure relative positioning */
+    z-index: 1; /* Keep it above other elements */
+}
+
+.game-area {
+    position: relative; /* Keep this relative for absolute positioning of game over */
+    display: inline-block; /* Makes sure the game area can be centered */
+    width: 400px; /* Set a fixed width for the game area */
+    height: 400px; /* Set a fixed height for the game area */
+}
+
+#gameCanvas {
+    display: block; /* Ensures canvas is block element for centering */
+    margin: 0 auto; /* Center the canvas */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 10px; /* Space above the button */
+}
+
+#pauseBtn {
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#pauseBtn:hover {
+    background-color: #FFC107; /* Darker gold on hover */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #000000; /* Larger black border effect */
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 #000000; /* Larger black border effect */
+}
+
+canvas {
+    border: 2px solid #ffffff;
+    background-color: #333333;
+}
+
+.instructions {
+    margin-top: 20px; /* Space above instructions */
+    font-size: 16px;
+    text-shadow: 2px 2px 0 #000000; /* Larger black border effect */
+    line-height: 1.5; /* Increase line height for more spacing between lines */
+}
+
+.instructions p {
+    margin-bottom: 10px; /* Space below each instruction paragraph */
+}
+
+.game-over {
+    position: absolute; /* Change to absolute positioning */
+    top: 50%; /* Center vertically within the game area */
+    left: 50%; /* Center horizontally within the game area */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #FFFFFF; /* White text color */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    text-shadow: 2px 2px 0 #000000; /* Black border effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; /* Hide by default */
+}
+
+.game-over h2 {
+    margin-bottom: 10px;
+}
+
+.game-over p {
+    margin-bottom: 15px;
+}
+
+#restartBtn {
+    background-color: #00FF00; /* Green button */
+    color: #000000; /* Black text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#restartBtn:hover {
+    background-color: #00CC00; /* Darker green on hover */
+}
