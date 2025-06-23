@@ -1,2 +1,2 @@
 # snakegame
-Snake game I am creating for fun
+Snake game I created for fun.
